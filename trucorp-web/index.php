@@ -13,11 +13,6 @@
                 </tr> 
 
 	
-	<tr>
-		<th>ID</th>
-		<th>Nama</th>
-		<th>Kantor</th>		
-	</tr>	
 	
 
 
