@@ -14,7 +14,7 @@
 	
 
 	<?php 
-		$conn = mysqli_connect('172.18.0.2','root','owlowl','Trucorp');
+		$conn = mysqli_connect('172.21.0.3','root','owlowl','Trucorp');
 		$query = "SELECT *FROM users";
 		$result = $conn->query($query);
 		$user = 0;
