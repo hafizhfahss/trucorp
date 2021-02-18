@@ -5,19 +5,18 @@
 </head>
 <body>
 
-	
+	<table border=1>
+		<tr>
+                        <th>ID</th>
+                        <th>Nama</th>
+                        <th>Kantor</th>         
+                </tr> 
 
 	<?php 
 		$conn = mysqli_connect('172.18.0.2','root','owlowl','Trucorp');
 		$query = "SELECT *FROM users";
 		$result = $conn->query($query);
 		$user = 0;
-
-		<tr>
-			<th>ID</th>
-			<th>Nama</th>
-			<th>Kantor</th>		
-		</tr>		
 
 		while($data=$result->fetch_assoc())
 		{?>
@@ -29,5 +28,6 @@
 
 		<?php $user = $user + 1; }
 		echo "Jumlah User Terdaftar = ".$user;?>
+	</table>
 </body>
 </html>
